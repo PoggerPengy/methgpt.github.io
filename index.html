@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Math Practice</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <!-- MathJax renders LaTeX like \(x^2\), \frac{1}{2}, \sqrt{x}, etc. -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Free static math packet player</p>
+      <h1>Open Math Practice</h1>
+    </div>
+    <button id="themeToggle" class="ghost-btn" type="button" aria-label="Toggle theme">Theme</button>
+  </header>
+
+  <main class="app-shell">
+    <section class="panel upload-panel" aria-labelledby="upload-title">
+      <div class="panel-heading">
+        <h2 id="upload-title">Load a question packet</h2>
+        <p>Upload a JSON packet generated from the included schema, or test the sample packet.</p>
+      </div>
+
+      <div class="upload-box">
+        <input id="packetFile" type="file" accept=".json,application/json" />
+        <div class="upload-actions">
+          <button id="loadSample" type="button">Load sample packet</button>
+          <button id="downloadTemplate" class="secondary-btn" type="button">Download blank template</button>
+        </div>
+      </div>
+
+      <details class="help-box">
+        <summary>Question packet format</summary>
+        <p>The site reads <strong>.json</strong> packets. Questions can use LaTeX math like <code>\\frac{3}{4}</code>, <code>x^2</code>, <code>\\sqrt{x}</code>, inequalities, functions, trig, logs, limits, derivatives, and integrals.</p>
+        <p>Use the README and schema folder when asking ChatGPT to generate new packets.</p>
+      </details>
+    </section>
+
+    <section id="packetSummary" class="panel summary-panel hidden" aria-live="polite"></section>
+
+    <section class="workspace hidden" id="workspace">
+      <aside class="panel question-list-panel" aria-label="Question list">
+        <div class="list-header">
+          <h2>Questions</h2>
+          <span id="progressPill" class="pill">0 / 0</span>
+        </div>
+        <div class="mode-row">
+          <button id="practiceMode" class="mode-btn active" type="button">Practice</button>
+          <button id="reviewMode" class="mode-btn" type="button">Review all</button>
+        </div>
+        <ol id="questionList" class="question-list"></ol>
+      </aside>
+
+      <section id="questionArea" class="panel question-panel" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <template id="mathPaletteTemplate">
+    <div class="math-palette" aria-label="Math input tools">
+      <button type="button" data-insert="\\frac{□}{□}">fraction</button>
+      <button type="button" data-insert="^{□}">exponent</button>
+      <button type="button" data-insert="\\sqrt{□}">sqrt</button>
+      <button type="button" data-insert="\\pi">π</button>
+      <button type="button" data-insert="\\theta">θ</button>
+      <button type="button" data-insert="\\le">≤</button>
+      <button type="button" data-insert="\\ge">≥</button>
+      <button type="button" data-insert="\\pm">±</button>
+      <button type="button" data-insert="\\infty">∞</button>
+      <button type="button" data-insert="\\log_{□}(□)">log</button>
+      <button type="button" data-insert="\\lim_{x\\to □}">limit</button>
+      <button type="button" data-insert="\\frac{d}{dx}">d/dx</button>
+      <button type="button" data-insert="\\int">∫</button>
+    </div>
+  </template>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
