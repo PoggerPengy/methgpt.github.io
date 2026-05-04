@@ -1,0 +1,1279 @@
+{
+  "version": "1.0",
+  "title": "Grade 8 Ontario Financial Literacy Practice Packet",
+  "description": "30 questions modeled after Grade 8 financial literacy practice: income, net pay, budgeting, unit prices, discounts, Ontario HST, tips, simple interest, compound interest, profit, and multi-step money problems.",
+  "level": "Grade 8 Ontario - Financial Literacy",
+  "settings": {
+    "showHints": true,
+    "allowRetry": true,
+    "showSolutionOnCorrect": true
+  },
+  "questions": [
+    {
+      "id": "g8-fin-001-hourly-gross-pay",
+      "type": "multiple_choice",
+      "title": "Hourly income",
+      "prompt": "Maya earns \\$12.50 per hour and works 16 hours in one week. What is her gross pay for the week?",
+      "math": "\\text{Gross pay} = \\text{hourly rate} \\times \\text{hours worked}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$180.00",
+          "feedback": "This would be too low for 16 hours at \\$12.50/hr."
+        },
+        {
+          "id": "B",
+          "text": "\\$200.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$216.00",
+          "feedback": "This does not match \\(12.50 \\times 16\\)."
+        },
+        {
+          "id": "D",
+          "text": "\\$250.00",
+          "feedback": "This would be 20 hours at \\$12.50/hr."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Multiply the hourly rate by the number of hours worked.",
+      "solution": [
+        "\\(12.50 \\times 16 = 200\\)",
+        "Maya's gross pay is \\$200.00."
+      ]
+    },
+    {
+      "id": "g8-fin-002-net-income-deductions",
+      "type": "multiple_choice",
+      "title": "Net income after deductions",
+      "prompt": "Jon earns \\$640.00 in gross income. If 12% is deducted for taxes and other deductions, what is his net income?",
+      "math": "\\text{Net income} = \\text{Gross income} - \\text{Deductions}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$563.20",
+          "feedback": "Correct."
+        },
+        {
+          "id": "B",
+          "text": "\\$76.80",
+          "feedback": "This is only the amount deducted."
+        },
+        {
+          "id": "C",
+          "text": "\\$652.00",
+          "feedback": "This adds 12 instead of subtracting 12%."
+        },
+        {
+          "id": "D",
+          "text": "\\$716.80",
+          "feedback": "This adds the deductions instead of subtracting them."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "A"
+      },
+      "hint": "First find 12% of 640, then subtract it from 640.",
+      "solution": [
+        "\\(640 \\times 0.12 = 76.80\\)",
+        "\\(640 - 76.80 = 563.20\\)",
+        "Jon's net income is \\$563.20."
+      ]
+    },
+    {
+      "id": "g8-fin-003-annual-monthly-income",
+      "type": "multiple_choice",
+      "title": "Monthly income from yearly income",
+      "prompt": "A part-time job pays \\$36,000.00 per year. What is the average monthly income?",
+      "math": "\\text{Monthly income} = \\frac{\\text{Yearly income}}{12}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$2,400.00",
+          "feedback": "This would be \\$28,800 per year."
+        },
+        {
+          "id": "B",
+          "text": "\\$3,000.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$3,600.00",
+          "feedback": "This divides by 10, not 12."
+        },
+        {
+          "id": "D",
+          "text": "\\$432,000.00",
+          "feedback": "This multiplies by 12 instead of dividing by 12."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "A year has 12 months.",
+      "solution": [
+        "\\(36,000 \\div 12 = 3,000\\)",
+        "The average monthly income is \\$3,000.00."
+      ]
+    },
+    {
+      "id": "g8-fin-004-commission",
+      "type": "multiple_choice",
+      "title": "Commission income",
+      "prompt": "A salesperson earns 6% commission on a \\$850.00 sale. How much commission do they earn?",
+      "math": "\\text{Commission} = \\text{Sales} \\times \\text{commission rate}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$5.10",
+          "feedback": "This is 0.6% of the sale, not 6%."
+        },
+        {
+          "id": "B",
+          "text": "\\$51.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$56.00",
+          "feedback": "This is close, but not \\(850 \\times 0.06\\)."
+        },
+        {
+          "id": "D",
+          "text": "\\$901.00",
+          "feedback": "This adds the commission to the sale amount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Change 6% to 0.06 before multiplying.",
+      "solution": [
+        "\\(6\\% = 0.06\\)",
+        "\\(850 \\times 0.06 = 51\\)",
+        "The commission is \\$51.00."
+      ]
+    },
+    {
+      "id": "g8-fin-005-budget-surplus",
+      "type": "multiple_choice",
+      "title": "Budget surplus or deficit",
+      "prompt": "A student earns \\$95.00. They spend \\$18.00 on transportation, \\$32.00 on food, \\$20.00 on clothes, and \\$15.00 on entertainment. How much money is left?",
+      "math": "\\text{Money left} = \\text{Income} - \\text{Expenses}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$5.00",
+          "feedback": "Check the total expenses again."
+        },
+        {
+          "id": "B",
+          "text": "\\$10.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$85.00",
+          "feedback": "This is the total expenses, not the amount left."
+        },
+        {
+          "id": "D",
+          "text": "\\$180.00",
+          "feedback": "This adds income and expenses together."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Add all expenses first, then subtract from the income.",
+      "solution": [
+        "Expenses: \\(18 + 32 + 20 + 15 = 85\\)",
+        "Money left: \\(95 - 85 = 10\\)",
+        "The student has \\$10.00 left."
+      ]
+    },
+    {
+      "id": "g8-fin-006-savings-percent-budget",
+      "type": "multiple_choice",
+      "title": "Savings as a percent of income",
+      "prompt": "Priya earns \\$300.00 from tutoring and saves \\$45.00. What percent of her income does she save?",
+      "math": "\\text{Percent saved} = \\frac{\\text{Savings}}{\\text{Income}} \\times 100\\%",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "10%",
+          "feedback": "This would be \\$30.00 saved."
+        },
+        {
+          "id": "B",
+          "text": "15%",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "45%",
+          "feedback": "This uses the savings number as the percent."
+        },
+        {
+          "id": "D",
+          "text": "85%",
+          "feedback": "This is not the savings percent."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Divide 45 by 300, then multiply by 100.",
+      "solution": [
+        "\\(45 \\div 300 = 0.15\\)",
+        "\\(0.15 \\times 100\\% = 15\\%\\)",
+        "Priya saves 15% of her income."
+      ]
+    },
+    {
+      "id": "g8-fin-007-unit-price",
+      "type": "multiple_choice",
+      "title": "Unit price",
+      "prompt": "A box of 12 granola bars costs \\$8.40. What is the cost per granola bar?",
+      "math": "\\text{Unit price} = \\frac{\\text{Total cost}}{\\text{Number of items}}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$0.60 per bar",
+          "feedback": "This would make 12 bars cost \\$7.20."
+        },
+        {
+          "id": "B",
+          "text": "\\$0.70 per bar",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$0.84 per bar",
+          "feedback": "This is not \\(8.40 \\div 12\\)."
+        },
+        {
+          "id": "D",
+          "text": "\\$1.40 per bar",
+          "feedback": "This is too high for 12 bars costing \\$8.40 total."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Divide the total cost by the number of bars.",
+      "solution": [
+        "\\(8.40 \\div 12 = 0.70\\)",
+        "Each bar costs \\$0.70."
+      ]
+    },
+    {
+      "id": "g8-fin-008-best-unit-rate",
+      "type": "multiple_choice",
+      "title": "Best buy using unit rates",
+      "prompt": "Which bag of rice has the lowest price per 100 g?",
+      "table": {
+        "headers": [
+          "Option",
+          "Amount",
+          "Price"
+        ],
+        "rows": [
+          [
+            "A",
+            "500 g",
+            "\\$3.75"
+          ],
+          [
+            "B",
+            "750 g",
+            "\\$5.40"
+          ],
+          [
+            "C",
+            "1 kg",
+            "\\$7.90"
+          ],
+          [
+            "D",
+            "250 g",
+            "\\$2.10"
+          ]
+        ]
+      },
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "500 g for \\$3.75",
+          "feedback": "This is \\$0.75 per 100 g."
+        },
+        {
+          "id": "B",
+          "text": "750 g for \\$5.40",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "1 kg for \\$7.90",
+          "feedback": "This is \\$0.79 per 100 g."
+        },
+        {
+          "id": "D",
+          "text": "250 g for \\$2.10",
+          "feedback": "This is \\$0.84 per 100 g."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Convert each option to price per 100 g.",
+      "solution": [
+        "A: \\(3.75 \\div 5 = 0.75\\) per 100 g",
+        "B: \\(5.40 \\div 7.5 = 0.72\\) per 100 g",
+        "C: \\(7.90 \\div 10 = 0.79\\) per 100 g",
+        "D: \\(2.10 \\div 2.5 = 0.84\\) per 100 g",
+        "The best buy is 750 g for \\$5.40."
+      ]
+    },
+    {
+      "id": "g8-fin-009-discount-only",
+      "type": "multiple_choice",
+      "title": "Sale discount",
+      "prompt": "A jacket costs \\$80.00 and is 25% off. What is the sale price before tax?",
+      "math": "\\text{Sale price} = \\text{Original price} - \\text{Discount}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$20.00",
+          "feedback": "This is only the discount amount."
+        },
+        {
+          "id": "B",
+          "text": "\\$55.00",
+          "feedback": "Check 25% of \\$80.00."
+        },
+        {
+          "id": "C",
+          "text": "\\$60.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$100.00",
+          "feedback": "This adds 25% instead of subtracting it."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Find 25% of 80, then subtract it from 80.",
+      "solution": [
+        "\\(80 \\times 0.25 = 20\\)",
+        "\\(80 - 20 = 60\\)",
+        "The sale price before tax is \\$60.00."
+      ]
+    },
+    {
+      "id": "g8-fin-010-hst-only",
+      "type": "multiple_choice",
+      "title": "Ontario HST",
+      "prompt": "A backpack costs \\$125.00 before tax. If Ontario HST is 13%, what is the total cost after tax?",
+      "math": "\\text{Total} = \\text{Price} + (\\text{Price} \\times \\text{Tax rate})",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$16.25",
+          "feedback": "This is only the HST amount."
+        },
+        {
+          "id": "B",
+          "text": "\\$138.00",
+          "feedback": "This adds \\$13.00 instead of 13%."
+        },
+        {
+          "id": "C",
+          "text": "\\$141.25",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$151.25",
+          "feedback": "This uses the wrong tax amount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Find 13% of 125, then add it to 125.",
+      "solution": [
+        "HST: \\(125 \\times 0.13 = 16.25\\)",
+        "Total: \\(125 + 16.25 = 141.25\\)",
+        "The total cost is \\$141.25."
+      ]
+    },
+    {
+      "id": "g8-fin-011-discount-plus-hst",
+      "type": "multiple_choice",
+      "title": "Discount and tax",
+      "prompt": "A video game costs \\$64.99 and is 20% off. After the discount, Ontario HST of 13% is added. What is the final cost, rounded to the nearest cent?",
+      "math": "\\text{Final cost} = (\\text{Original price} \\times 0.80) \\times 1.13",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$51.99",
+          "feedback": "This is the discounted price before tax."
+        },
+        {
+          "id": "B",
+          "text": "\\$58.75",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$65.53",
+          "feedback": "This is close to subtracting the discount after tax incorrectly."
+        },
+        {
+          "id": "D",
+          "text": "\\$73.44",
+          "feedback": "This adds tax but does not apply the discount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Take off 20% first, then multiply by 1.13 for HST.",
+      "solution": [
+        "Discounted price: \\(64.99 \\times 0.80 = 51.992\\)",
+        "After HST: \\(51.992 \\times 1.13 = 58.75096\\)",
+        "Rounded to the nearest cent, the final cost is \\$58.75."
+      ]
+    },
+    {
+      "id": "g8-fin-012-reverse-hst",
+      "type": "multiple_choice",
+      "title": "Working backwards from tax-included price",
+      "prompt": "A tax-included total is \\$113.00. If the HST rate is 13%, what was the price before tax?",
+      "math": "\\text{Before-tax price} = \\frac{\\text{Total}}{1.13}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$13.00",
+          "feedback": "This is the tax amount on \\$100.00, not the before-tax price."
+        },
+        {
+          "id": "B",
+          "text": "\\$100.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$126.00",
+          "feedback": "This adds another 13% instead of removing tax."
+        },
+        {
+          "id": "D",
+          "text": "\\$127.69",
+          "feedback": "This multiplies by 1.13 instead of dividing by 1.13."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "A price with 13% tax included is 113% of the original price.",
+      "solution": [
+        "\\(113 \\div 1.13 = 100\\)",
+        "The price before tax was \\$100.00."
+      ]
+    },
+    {
+      "id": "g8-fin-013-tip",
+      "type": "multiple_choice",
+      "title": "Tip calculation",
+      "prompt": "A restaurant meal costs \\$42.00 before tip. If you leave a 15% tip, what is the total cost?",
+      "math": "\\text{Total} = \\text{Meal cost} + (\\text{Meal cost} \\times \\text{Tip rate})",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$6.30",
+          "feedback": "This is only the tip."
+        },
+        {
+          "id": "B",
+          "text": "\\$46.20",
+          "feedback": "This uses 10% instead of 15%."
+        },
+        {
+          "id": "C",
+          "text": "\\$48.30",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$57.00",
+          "feedback": "This adds 15 dollars instead of 15%."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Find 15% of 42, then add it to 42.",
+      "solution": [
+        "Tip: \\(42 \\times 0.15 = 6.30\\)",
+        "Total: \\(42 + 6.30 = 48.30\\)",
+        "The total cost is \\$48.30."
+      ]
+    },
+    {
+      "id": "g8-fin-014-simple-interest",
+      "type": "multiple_choice",
+      "title": "Simple interest earned",
+      "prompt": "Nora invests \\$600.00 at a simple interest rate of 4% per year for 3 years. How much interest does she earn?",
+      "math": "I = Prt",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$24.00",
+          "feedback": "This is the interest for only 1 year."
+        },
+        {
+          "id": "B",
+          "text": "\\$72.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$624.00",
+          "feedback": "This is the total after 1 year, not interest after 3 years."
+        },
+        {
+          "id": "D",
+          "text": "\\$672.00",
+          "feedback": "This is the final balance, not the interest earned."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Use \\(I = Prt\\) with \\(r=0.04\\) and \\(t=3\\).",
+      "solution": [
+        "\\(I = 600(0.04)(3)\\)",
+        "\\(I = 72\\)",
+        "Nora earns \\$72.00 in interest."
+      ]
+    },
+    {
+      "id": "g8-fin-015-simple-interest-total-payback",
+      "type": "multiple_choice",
+      "title": "Simple interest total payback",
+      "prompt": "Omar borrows \\$1,200.00 at a simple interest rate of 5% per year for 2 years. What total amount must he pay back?",
+      "math": "A = P + Prt",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$120.00",
+          "feedback": "This is only the interest."
+        },
+        {
+          "id": "B",
+          "text": "\\$1,260.00",
+          "feedback": "This is only one year of interest added."
+        },
+        {
+          "id": "C",
+          "text": "\\$1,320.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$2,400.00",
+          "feedback": "This doubles the principal without using the rate."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Find the interest first, then add it to the principal.",
+      "solution": [
+        "Interest: \\(1,200(0.05)(2)=120\\)",
+        "Total: \\(1,200+120=1,320\\)",
+        "Omar must pay back \\$1,320.00."
+      ]
+    },
+    {
+      "id": "g8-fin-016-principal-simple-interest",
+      "type": "multiple_choice",
+      "title": "Finding principal from simple interest",
+      "prompt": "Sophia wants to earn \\$90.00 in simple interest over 2 years at a rate of 3% per year. What principal amount must she invest?",
+      "math": "P = \\frac{I}{rt}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$540.00",
+          "feedback": "This multiplies the values instead of dividing by the rate and time."
+        },
+        {
+          "id": "B",
+          "text": "\\$1,350.00",
+          "feedback": "Check the rate and time calculation."
+        },
+        {
+          "id": "C",
+          "text": "\\$1,500.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$3,000.00",
+          "feedback": "This forgets to include the 2 years correctly."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Use \\(P=I/(rt)\\), where \\(r=0.03\\) and \\(t=2\\).",
+      "solution": [
+        "\\(P = \\frac{90}{0.03 \\times 2}\\)",
+        "\\(P = \\frac{90}{0.06} = 1,500\\)",
+        "Sophia must invest \\$1,500.00."
+      ]
+    },
+    {
+      "id": "g8-fin-017-compound-interest",
+      "type": "multiple_choice",
+      "title": "Compound interest",
+      "prompt": "Emma invests \\$1,000.00 at an interest rate of 5% per year, compounded annually. What will her balance be after 2 years?",
+      "math": "A = P(1+r)^t",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$1,050.00",
+          "feedback": "This is the balance after only 1 year."
+        },
+        {
+          "id": "B",
+          "text": "\\$1,100.00",
+          "feedback": "This is simple interest for 2 years."
+        },
+        {
+          "id": "C",
+          "text": "\\$1,102.50",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$102.50",
+          "feedback": "This is only the compound interest earned, not the total balance."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "For compound interest, the second year earns interest on the first year's new balance.",
+      "solution": [
+        "Year 1: \\(1,000 \\times 1.05 = 1,050\\)",
+        "Year 2: \\(1,050 \\times 1.05 = 1,102.50\\)",
+        "The balance is \\$1,102.50."
+      ]
+    },
+    {
+      "id": "g8-fin-018-simple-vs-compound-difference",
+      "type": "multiple_choice",
+      "title": "Simple vs compound interest",
+      "prompt": "A \\$1,000.00 investment earns 4% per year for 2 years. How much more money does compound interest earn than simple interest, if it is compounded annually?",
+      "math": "A_{compound}=P(1+r)^t, \\quad A_{simple}=P+Prt",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$0.00",
+          "feedback": "Compound and simple interest are not always equal after more than one compounding period."
+        },
+        {
+          "id": "B",
+          "text": "\\$1.60",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$40.00",
+          "feedback": "This is one year of interest."
+        },
+        {
+          "id": "D",
+          "text": "\\$81.60",
+          "feedback": "This is the total compound interest earned, not the difference."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Find the simple-interest total and compound-interest total, then subtract.",
+      "solution": [
+        "Simple total: \\(1,000 + 1,000(0.04)(2)=1,080\\)",
+        "Compound total: \\(1,000(1.04)^2=1,081.60\\)",
+        "Difference: \\(1,081.60-1,080=1.60\\)",
+        "Compound interest earns \\$1.60 more."
+      ]
+    },
+    {
+      "id": "g8-fin-019-saving-goal-monthly",
+      "type": "multiple_choice",
+      "title": "Saving toward a goal",
+      "prompt": "Leo wants to save \\$360.00 in 9 months. He already has \\$90.00 saved. How much does he need to save each month?",
+      "math": "\\text{Monthly savings} = \\frac{\\text{Goal} - \\text{Already saved}}{\\text{Number of months}}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$30.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "B",
+          "text": "\\$40.00",
+          "feedback": "This forgets that he already has \\$90.00 saved."
+        },
+        {
+          "id": "C",
+          "text": "\\$45.00",
+          "feedback": "Check the amount remaining and number of months."
+        },
+        {
+          "id": "D",
+          "text": "\\$270.00",
+          "feedback": "This is the total amount still needed, not the monthly amount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "A"
+      },
+      "hint": "Subtract what he already saved before dividing by 9.",
+      "solution": [
+        "Amount still needed: \\(360 - 90 = 270\\)",
+        "Monthly savings: \\(270 \\div 9 = 30\\)",
+        "Leo needs to save \\$30.00 each month."
+      ]
+    },
+    {
+      "id": "g8-fin-020-percent-increase",
+      "type": "multiple_choice",
+      "title": "Percent increase",
+      "prompt": "A student's weekly allowance increases from \\$20.00 to \\$25.00. What is the percent increase?",
+      "math": "\\text{Percent increase} = \\frac{\\text{New amount} - \\text{Original amount}}{\\text{Original amount}} \\times 100\\%",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "5%",
+          "feedback": "This is the dollar increase, not the percent increase."
+        },
+        {
+          "id": "B",
+          "text": "20%",
+          "feedback": "This compares the increase to the new amount."
+        },
+        {
+          "id": "C",
+          "text": "25%",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "125%",
+          "feedback": "This is the new amount as a percent of the old amount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "The increase is \\$5.00. Compare that to the original \\$20.00.",
+      "solution": [
+        "Increase: \\(25-20=5\\)",
+        "Percent increase: \\(5 \\div 20 = 0.25 = 25\\%\\)",
+        "The allowance increased by 25%."
+      ]
+    },
+    {
+      "id": "g8-fin-021-profit",
+      "type": "multiple_choice",
+      "title": "Profit after expenses",
+      "prompt": "A student sells handmade bracelets and earns \\$240.00 in revenue. They spend \\$75.00 on materials and \\$25.00 for a table at a craft fair. What is their profit?",
+      "math": "\\text{Profit} = \\text{Revenue} - \\text{Expenses}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$100.00",
+          "feedback": "This is the total expenses, not the profit."
+        },
+        {
+          "id": "B",
+          "text": "\\$140.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$165.00",
+          "feedback": "This subtracts only the materials."
+        },
+        {
+          "id": "D",
+          "text": "\\$340.00",
+          "feedback": "This adds expenses to revenue instead of subtracting them."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Add the expenses first, then subtract from revenue.",
+      "solution": [
+        "Expenses: \\(75 + 25 = 100\\)",
+        "Profit: \\(240 - 100 = 140\\)",
+        "The profit is \\$140.00."
+      ]
+    },
+    {
+      "id": "g8-fin-022-net-profit-contract",
+      "type": "multiple_choice",
+      "title": "Net profit from a contract",
+      "prompt": "A freelancer takes a contract to build a website for \\$3,200.00. They spend \\$450.00 on software licences and hire an assistant for 10 hours at \\$25.00/hr. What is the freelancer's net profit from the contract?",
+      "math": "\\text{Net profit} = \\text{Revenue} - \\text{Total expenses}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$2,500.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "B",
+          "text": "\\$2,750.00",
+          "feedback": "This subtracts the assistant cost but forgets the software licence cost."
+        },
+        {
+          "id": "C",
+          "text": "\\$2,950.00",
+          "feedback": "This subtracts only part of the expenses."
+        },
+        {
+          "id": "D",
+          "text": "\\$3,200.00",
+          "feedback": "This is the revenue before expenses."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "A"
+      },
+      "hint": "Assistant cost is \\(10 \\times 25\\), then subtract both expenses from revenue.",
+      "solution": [
+        "Assistant cost: \\(10 \\times 25 = 250\\)",
+        "Total expenses: \\(450 + 250 = 700\\)",
+        "Net profit: \\(3,200 - 700 = 2,500\\)",
+        "The freelancer's net profit is \\$2,500.00."
+      ]
+    },
+    {
+      "id": "g8-fin-023-after-tax-pay",
+      "type": "multiple_choice",
+      "title": "Take-home pay",
+      "prompt": "A student earns \\$15.00 per hour and works 20 hours. If 8% is deducted, what is the take-home pay?",
+      "math": "\\text{Take-home pay} = \\text{Gross pay} - \\text{Deductions}",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$24.00",
+          "feedback": "This is only the amount deducted."
+        },
+        {
+          "id": "B",
+          "text": "\\$276.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$292.00",
+          "feedback": "This subtracts 8 dollars instead of 8%."
+        },
+        {
+          "id": "D",
+          "text": "\\$300.00",
+          "feedback": "This is the gross pay before deductions."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Find gross pay first, then subtract 8% of it.",
+      "solution": [
+        "Gross pay: \\(15 \\times 20 = 300\\)",
+        "Deductions: \\(300 \\times 0.08 = 24\\)",
+        "Take-home pay: \\(300 - 24 = 276\\)",
+        "The take-home pay is \\$276.00."
+      ]
+    },
+    {
+      "id": "g8-fin-024-markup-percent",
+      "type": "multiple_choice",
+      "title": "Markup percent",
+      "prompt": "A store buys headphones for \\$30.00 and sells them for \\$42.00. What is the markup as a percent of the store's cost?",
+      "math": "\\text{Markup percent} = \\frac{\\text{Selling price} - \\text{Cost}}{\\text{Cost}} \\times 100\\%",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "12%",
+          "feedback": "This is the dollar markup written as a percent."
+        },
+        {
+          "id": "B",
+          "text": "28.6%",
+          "feedback": "This compares the markup to the selling price, not the cost."
+        },
+        {
+          "id": "C",
+          "text": "40%",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "140%",
+          "feedback": "This is the selling price as a percent of cost, not the markup percent."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "First find the dollar markup, then divide by the cost.",
+      "solution": [
+        "Markup: \\(42 - 30 = 12\\)",
+        "Markup percent: \\(12 \\div 30 = 0.4 = 40\\%\\)",
+        "The markup is 40% of the cost."
+      ]
+    },
+    {
+      "id": "g8-fin-025-compare-simple-interest-offers",
+      "type": "multiple_choice",
+      "title": "Comparing simple interest offers",
+      "prompt": "Two savings accounts use simple interest. Account A pays 3% per year on \\$800.00 for 2 years. Account B pays 4% per year on \\$600.00 for 2 years. Which account earns more interest, and by how much?",
+      "math": "I = Prt",
+      "points": 1,
+      "options": [
+        {
+          "id": "A",
+          "text": "Account A by \\$0.00",
+          "feedback": "They do not earn the same amount."
+        },
+        {
+          "id": "B",
+          "text": "Account A by \\$48.00",
+          "feedback": "This is Account A's interest, not the difference."
+        },
+        {
+          "id": "C",
+          "text": "Account B by \\$48.00",
+          "feedback": "This is Account B's interest, not the difference."
+        },
+        {
+          "id": "D",
+          "text": "Neither; they earn the same interest",
+          "feedback": "Correct."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "D"
+      },
+      "hint": "Calculate \\(I=Prt\\) for both accounts.",
+      "solution": [
+        "Account A: \\(800(0.03)(2)=48\\)",
+        "Account B: \\(600(0.04)(2)=48\\)",
+        "They both earn \\$48.00, so neither earns more."
+      ]
+    },
+    {
+      "id": "g8-fin-026-taxable-and-nontaxable",
+      "type": "multiple_choice",
+      "title": "Taxable and non-taxable items",
+      "prompt": "A sweater costs \\$48.00 before tax. A snack costs \\$4.50 and is not taxed in this situation. If 13% HST is charged only on the sweater, what is the total cost?",
+      "math": "\\text{Total} = \\text{Taxable item} + \\text{HST} + \\text{Non-taxed item}",
+      "points": 2,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$52.50",
+          "feedback": "This adds the two prices but forgets HST on the sweater."
+        },
+        {
+          "id": "B",
+          "text": "\\$54.74",
+          "feedback": "This applies HST to the snack only."
+        },
+        {
+          "id": "C",
+          "text": "\\$58.74",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$59.33",
+          "feedback": "This applies HST to both the sweater and the snack."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Only calculate HST on \\$48.00, then add the snack price.",
+      "solution": [
+        "HST on sweater: \\(48 \\times 0.13 = 6.24\\)",
+        "Total: \\(48 + 6.24 + 4.50 = 58.74\\)",
+        "The total cost is \\$58.74."
+      ]
+    },
+    {
+      "id": "g8-fin-027-phone-plan-six-months",
+      "type": "multiple_choice",
+      "title": "Monthly plan with tax",
+      "prompt": "A phone plan costs \\$38.00 per month before tax. Ontario HST is 13%. What is the total cost for 6 months after tax?",
+      "math": "\\text{Total} = \\text{Monthly cost} \\times 1.13 \\times \\text{Number of months}",
+      "points": 2,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$42.94",
+          "feedback": "This is the cost for 1 month after tax."
+        },
+        {
+          "id": "B",
+          "text": "\\$228.00",
+          "feedback": "This is the cost for 6 months before tax."
+        },
+        {
+          "id": "C",
+          "text": "\\$257.64",
+          "feedback": "Correct."
+        },
+        {
+          "id": "D",
+          "text": "\\$296.40",
+          "feedback": "This uses the wrong tax calculation."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "C"
+      },
+      "hint": "Find one month after tax, then multiply by 6.",
+      "solution": [
+        "One month after tax: \\(38 \\times 1.13 = 42.94\\)",
+        "Six months: \\(42.94 \\times 6 = 257.64\\)",
+        "The total cost is \\$257.64."
+      ]
+    },
+    {
+      "id": "g8-fin-028-budget-table-deficit",
+      "type": "multiple_choice",
+      "title": "Budget table",
+      "prompt": "Use the monthly budget table. Is the budget a surplus or a deficit, and by how much?",
+      "table": {
+        "headers": [
+          "Item",
+          "Amount"
+        ],
+        "rows": [
+          [
+            "Income",
+            "\\$1,250.00"
+          ],
+          [
+            "Rent contribution",
+            "\\$500.00"
+          ],
+          [
+            "Food",
+            "\\$260.00"
+          ],
+          [
+            "Transportation",
+            "\\$120.00"
+          ],
+          [
+            "Phone",
+            "\\$65.00"
+          ],
+          [
+            "Entertainment",
+            "\\$140.00"
+          ],
+          [
+            "Savings",
+            "\\$200.00"
+          ]
+        ]
+      },
+      "points": 2,
+      "options": [
+        {
+          "id": "A",
+          "text": "Surplus of \\$35.00",
+          "feedback": "Check the total expenses."
+        },
+        {
+          "id": "B",
+          "text": "Deficit of \\$35.00",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "Surplus of \\$1,285.00",
+          "feedback": "This adds expenses to income."
+        },
+        {
+          "id": "D",
+          "text": "Deficit of \\$1,285.00",
+          "feedback": "This is the total expenses, not the deficit amount."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Add every expense category, including savings, then compare to income.",
+      "solution": [
+        "Expenses: \\(500+260+120+65+140+200=1,285\\)",
+        "Compare to income: \\(1,250 - 1,285 = -35\\)",
+        "The budget has a deficit of \\$35.00."
+      ]
+    },
+    {
+      "id": "g8-fin-029-multiple-discount-tax",
+      "type": "multiple_choice",
+      "title": "Multiple discounts and tax",
+      "prompt": "A pair of shoes costs \\$120.00. The store gives 30% off, then an extra 10% off the sale price. After both discounts, 13% HST is added. What is the final cost?",
+      "math": "\\text{Final cost} = 120(0.70)(0.90)(1.13)",
+      "points": 2,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\$75.60",
+          "feedback": "This is the price after both discounts before tax."
+        },
+        {
+          "id": "B",
+          "text": "\\$85.43",
+          "feedback": "Correct."
+        },
+        {
+          "id": "C",
+          "text": "\\$88.14",
+          "feedback": "This treats the discounts as one 40% discount, then adds tax."
+        },
+        {
+          "id": "D",
+          "text": "\\$135.60",
+          "feedback": "This adds tax to the original price without applying discounts correctly."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Do the discounts one at a time, then add tax at the end.",
+      "solution": [
+        "After 30% off: \\(120 \\times 0.70 = 84\\)",
+        "After extra 10% off: \\(84 \\times 0.90 = 75.60\\)",
+        "After HST: \\(75.60 \\times 1.13 = 85.428\\)",
+        "Rounded to the nearest cent, the final cost is \\$85.43."
+      ]
+    },
+    {
+      "id": "g8-fin-030-income-expenses-savings-rate",
+      "type": "multiple_choice",
+      "title": "Savings rate after expenses",
+      "prompt": "A student earns \\$420.00 in a month. They spend \\$135.00 on food, \\$48.00 on transit, and \\$57.00 on entertainment. They save all the money left over. What percent of their income do they save?",
+      "math": "\\text{Savings rate} = \\frac{\\text{Savings}}{\\text{Income}} \\times 100\\%",
+      "points": 2,
+      "options": [
+        {
+          "id": "A",
+          "text": "42.9%",
+          "feedback": "Correct."
+        },
+        {
+          "id": "B",
+          "text": "57.1%",
+          "feedback": "This is the percent spent, not saved."
+        },
+        {
+          "id": "C",
+          "text": "180%",
+          "feedback": "This is the amount saved written as a percent incorrectly."
+        },
+        {
+          "id": "D",
+          "text": "240%",
+          "feedback": "This is the total expenses written as a percent incorrectly."
+        }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "A"
+      },
+      "hint": "Find total expenses, subtract from income, then convert savings to a percent of income.",
+      "solution": [
+        "Expenses: \\(135 + 48 + 57 = 240\\)",
+        "Savings: \\(420 - 240 = 180\\)",
+        "Savings rate: \\(180 \\div 420 = 0.42857...\\)",
+        "Rounded to one decimal place, the student saves 42.9% of their income."
+      ]
+    }
+  ]
+}
