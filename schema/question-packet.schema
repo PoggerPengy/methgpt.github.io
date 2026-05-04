@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/open-math-question-packet.schema.json",
+  "title": "Open Math Practice Question Packet",
+  "type": "object",
+  "required": ["questions"],
+  "properties": {
+    "version": { "type": "string", "default": "1.0" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "level": { "type": "string", "examples": ["Grade 9", "Grade 10", "Grade 11", "Grade 12", "Mixed"] },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "showHints": { "type": "boolean" },
+        "allowRetry": { "type": "boolean" },
+        "showSolutionOnCorrect": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/question" }
+    }
+  },
+  "$defs": {
+    "answer": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string", "enum": ["exact", "numeric", "expression"] },
+        "value": { "type": ["string", "number"] },
+        "equivalents": { "type": "array", "items": { "type": ["string", "number"] } },
+        "accept": { "type": "array", "items": { "type": ["string", "number"] } },
+        "tolerance": { "type": "number" }
+      },
+      "additionalProperties": true
+    },
+    "option": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "part": {
+      "type": "object",
+      "required": ["id", "label", "answer"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "type": { "type": "string", "enum": ["short", "numeric", "expression"] },
+        "prompt": { "type": "string" },
+        "answer": { "$ref": "#/$defs/answer" }
+      },
+      "additionalProperties": true
+    },
+    "question": {
+      "type": "object",
+      "required": ["id", "type", "title"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["multiple_choice", "short", "numeric", "expression", "multi_part"] },
+        "title": { "type": "string" },
+        "prompt": { "type": "string" },
+        "math": { "type": "string", "description": "Display math as raw LaTeX without wrapping delimiters." },
+        "points": { "type": "number" },
+        "table": {
+          "type": "object",
+          "properties": {
+            "headers": { "type": "array", "items": { "type": "string" } },
+            "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } }
+          }
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": { "type": "string" },
+            "alt": { "type": "string" }
+          }
+        },
+        "options": { "type": "array", "items": { "$ref": "#/$defs/option" } },
+        "parts": { "type": "array", "items": { "$ref": "#/$defs/part" } },
+        "answer": { "$ref": "#/$defs/answer" },
+        "hint": { "type": "string" },
+        "solution": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  }
+}
