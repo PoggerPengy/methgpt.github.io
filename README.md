@@ -1,1 +1,0 @@
-# methgpt.github.io
