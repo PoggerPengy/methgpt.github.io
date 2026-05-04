@@ -1,1 +1,148 @@
 
+{
+  "version": "1.0",
+  "title": "Sample Grade 9-12 Math Packet",
+  "description": "A small demo packet showing linear relations, factoring, trig, functions, and calculus-style notation. Replace this with packets generated for your real units.",
+  "level": "Grade 9-12",
+  "settings": {
+    "showHints": true,
+    "allowRetry": true,
+    "showSolutionOnCorrect": true
+  },
+  "questions": [
+    {
+      "id": "linear-slope-1",
+      "type": "numeric",
+      "title": "Slope from two points",
+      "prompt": "Find the slope of the line passing through \\( (2, 7) \\) and \\( (6, -1) \\).",
+      "math": "m = \\frac{y_2-y_1}{x_2-x_1}",
+      "points": 1,
+      "answer": {
+        "mode": "numeric",
+        "value": "-2",
+        "tolerance": 0
+      },
+      "hint": "Subtract the y-values and divide by the change in x-values.",
+      "solution": [
+        "\\(m = \\frac{-1 - 7}{6 - 2}\\)",
+        "\\(m = \\frac{-8}{4}\\)",
+        "\\(m = -2\\)"
+      ]
+    },
+    {
+      "id": "linear-equation-1",
+      "type": "short",
+      "title": "Equation of a line",
+      "prompt": "A line has slope \\(3\\) and y-intercept \\(-4\\). Write the equation in slope-intercept form.",
+      "points": 1,
+      "answer": {
+        "mode": "expression",
+        "value": "y=3x-4",
+        "equivalents": ["y = 3x - 4", "3x-4", "3x+-4"]
+      },
+      "hint": "Slope-intercept form is \\(y=mx+b\\).",
+      "solution": [
+        "In \\(y=mx+b\\), the slope is \\(m\\) and the y-intercept is \\(b\\).",
+        "Here, \\(m=3\\) and \\(b=-4\\).",
+        "So the equation is \\(y=3x-4\\)."
+      ]
+    },
+    {
+      "id": "quadratic-factor-1",
+      "type": "multiple_choice",
+      "title": "Factoring a quadratic",
+      "prompt": "Which expression is equivalent to \\(x^2 + 5x + 6\\)?",
+      "points": 1,
+      "options": [
+        { "id": "A", "text": "\\((x+1)(x+6)\\)" },
+        { "id": "B", "text": "\\((x+2)(x+3)\\)" },
+        { "id": "C", "text": "\\((x-2)(x-3)\\)" },
+        { "id": "D", "text": "\\((x+5)(x+6)\\)" }
+      ],
+      "answer": {
+        "mode": "exact",
+        "value": "B"
+      },
+      "hint": "Look for two numbers that multiply to 6 and add to 5.",
+      "solution": [
+        "The numbers \\(2\\) and \\(3\\) multiply to \\(6\\) and add to \\(5\\).",
+        "So \\(x^2 + 5x + 6 = (x+2)(x+3)\\)."
+      ]
+    },
+    {
+      "id": "trig-1",
+      "type": "numeric",
+      "title": "Right triangle trig",
+      "prompt": "In a right triangle, the angle is \\(30^\\circ\\), and the hypotenuse is \\(12\\). Find the length of the side opposite the angle.",
+      "math": "\\sin(\\theta)=\\frac{\\text{opposite}}{\\text{hypotenuse}}",
+      "points": 1,
+      "answer": {
+        "mode": "numeric",
+        "value": "6",
+        "tolerance": 0.001
+      },
+      "hint": "Use \\(\\sin(30^\\circ)=0.5\\).",
+      "solution": [
+        "\\(\\sin(30^\\circ)=\\frac{x}{12}\\)",
+        "\\(0.5=\\frac{x}{12}\\)",
+        "\\(x=6\\)"
+      ]
+    },
+    {
+      "id": "function-table-1",
+      "type": "multi_part",
+      "title": "Function table and equation",
+      "prompt": "Use the table to answer both parts.",
+      "table": {
+        "headers": ["x", "0", "1", "2", "3"],
+        "rows": [
+          ["y", "-1", "2", "5", "8"]
+        ]
+      },
+      "points": 2,
+      "parts": [
+        {
+          "id": "partA",
+          "label": "Part A: First difference",
+          "type": "numeric",
+          "prompt": "What is the first difference in y?",
+          "answer": { "mode": "numeric", "value": "3", "tolerance": 0 }
+        },
+        {
+          "id": "partB",
+          "label": "Part B: Equation",
+          "type": "expression",
+          "prompt": "Write the equation in the form \\(y=mx+b\\).",
+          "answer": { "mode": "expression", "value": "y=3x-1", "equivalents": ["3x-1", "y = 3x - 1"] }
+        }
+      ],
+      "hint": "The first difference gives the slope when x increases by 1.",
+      "solution": [
+        "The y-values increase by \\(3\\), so the slope is \\(3\\).",
+        "When \\(x=0\\), \\(y=-1\\), so the y-intercept is \\(-1\\).",
+        "The equation is \\(y=3x-1\\)."
+      ]
+    },
+    {
+      "id": "derivative-1",
+      "type": "expression",
+      "title": "Derivative power rule",
+      "prompt": "Find \\(f'(x)\\) for the function below.",
+      "math": "f(x)=x^3-4x^2+7x-9",
+      "points": 1,
+      "answer": {
+        "mode": "expression",
+        "value": "3x^2-8x+7",
+        "equivalents": ["f'(x)=3x^2-8x+7", "3x^{2}-8x+7"]
+      },
+      "hint": "Use the power rule: \\(\\frac{d}{dx}x^n = nx^{n-1}\\).",
+      "solution": [
+        "\\(\\frac{d}{dx}x^3=3x^2\\)",
+        "\\(\\frac{d}{dx}(-4x^2)=-8x\\)",
+        "\\(\\frac{d}{dx}(7x)=7\\)",
+        "\\(\\frac{d}{dx}(-9)=0\\)",
+        "So \\(f'(x)=3x^2-8x+7\\)."
+      ]
+    }
+  ]
+}
